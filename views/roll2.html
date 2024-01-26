@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roll 2</title>
+  </head>
+
+  <body>
+    <p id="result"></p>
+    <script>
+      function randomDieRoll() {
+        return 1 + Math.floor(Math.random() * 6);
+      }
+      window.onload = function () {
+        let result = randomDieRoll();
+        document.getElementById("result").innerHTML = "Random Die Roll Result Roll 2: " + result;
+      };
+    </script>
+    <nav>
+        <a href="/roll1">Roll 1</a>
+        <a href="/roll2">Roll 2</a>
+    </nav>
+  </body>
+</html>
